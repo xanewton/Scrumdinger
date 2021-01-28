@@ -6,7 +6,7 @@ iOS application to learn SwiftUI based on [Apple Tutorials](https://developer.ap
 
 ![Scheme](/readmeImages/scrum_list.png)
 ![Scheme](/readmeImages/meeting_timer.png)
-![Scheme](/readmeImages/scrumdinger.png)
+![Scheme](/readmeImages/detail_and_edit.png)
 
 
 Pre-requisites
