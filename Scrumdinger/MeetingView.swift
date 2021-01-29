@@ -25,6 +25,13 @@ struct MeetingView: View {
                     Label("600", systemImage: "hourglass.tophalf.fill")
                 }
             }
+            /*
+             Accessibility is built into SwiftUI, so you get accessibility support with little additional work. For example, string content in Text views is automatically accessible to device features like VoiceOver
+             https://www.apple.com/accessibility/vision/
+             */
+            .accessibilityElement(children: .ignore)
+            .accessibilityLabel(Text("Time remaining"))
+            .accessibilityValue(Text("10 minutes"))
             Circle()
                 .strokeBorder(lineWidth: 24, antialiased: true)
             HStack {
@@ -33,6 +40,7 @@ struct MeetingView: View {
                 Button(action: {}) {
                     Image(systemName: "forward.fill")
                 }
+                .accessibilityLabel(Text("Next speaker"))
             }
         }
         .padding()
