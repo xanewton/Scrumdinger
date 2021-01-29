@@ -13,6 +13,7 @@
 		46866EAA25C3793A0013D95B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46866EA925C3793A0013D95B /* Preview Assets.xcassets */; };
 		46866EB425C37ADB0013D95B /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 46866EB225C37ADA0013D95B /* LICENSE.txt */; };
 		46866EB525C37ADB0013D95B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 46866EB325C37ADA0013D95B /* README.md */; };
+		469192E525C4D55400EE14AC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469192E425C4D55400EE14AC /* CardView.swift */; };
 		46DC2E8325C4D17600A27C91 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC2E8225C4D17600A27C91 /* DailyScrum.swift */; };
 		46DC2E8825C4D3FC00A27C91 /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC2E8725C4D3FC00A27C91 /* Color+Codable.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		46866EAB25C3793A0013D95B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46866EB225C37ADA0013D95B /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		46866EB325C37ADA0013D95B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		469192E425C4D55400EE14AC /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		46DC2E8225C4D17600A27C91 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		46DC2E8725C4D3FC00A27C91 /* Color+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +70,7 @@
 				46866EA625C3793A0013D95B /* Assets.xcassets */,
 				46866EAB25C3793A0013D95B /* Info.plist */,
 				46866EA825C3793A0013D95B /* Preview Content */,
+				469192E425C4D55400EE14AC /* CardView.swift */,
 			);
 			path = Scrumdinger;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				46DC2E8325C4D17600A27C91 /* DailyScrum.swift in Sources */,
 				46DC2E8825C4D3FC00A27C91 /* Color+Codable.swift in Sources */,
 				46866EA325C379390013D95B /* ScrumdingerApp.swift in Sources */,
+				469192E525C4D55400EE14AC /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
