@@ -4,17 +4,12 @@ iOS application to learn SwiftUI based on [Apple Tutorials](https://developer.ap
 
 ![Scheme](/readmeImages/scrumdinger.png)
 
-<div class="row">
-  <div class="column">
-    <img src="/readmeImages/scrum_list.png" width="20%" height="20%">
-  </div>
-  <div class="column">
-    <img src="/readmeImages/meeting_timer.png" width="20%" height="20%">
-  </div>
-  <div class="column">
-    <img src="/readmeImages/detail_and_edit.png" width="20%" height="20%">
-  </div>
-</div>
+
+<p float="left">
+  <img src="/readmeImages/scrum_list.png" width="20%" height="20%">
+  <img src="/readmeImages/meeting_timer.png" width="20%" height="20%">
+  <img src="/readmeImages/detail_and_edit.png" width="20%" height="20%">
+</p>
 
 
 Pre-requisites
