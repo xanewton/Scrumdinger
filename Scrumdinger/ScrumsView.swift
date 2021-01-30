@@ -19,6 +19,7 @@ struct ScrumsView: View {
                 .listRowBackground(scrum.color)
             }
         }
+        // Navigation modifiers, such as title and bar items, are added to child views and propagated to the parent NavigationView.
         .navigationTitle("Daily Scrums")
         .navigationBarItems(trailing: Button(action: {}) {
             Image(systemName: "plus")
