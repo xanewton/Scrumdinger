@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		465D82B325C60088001EA2AF /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465D82B225C60088001EA2AF /* ScrumsView.swift */; };
+		465D82B925C61326001EA2AF /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465D82B825C61326001EA2AF /* DetailView.swift */; };
 		46866EA325C379390013D95B /* ScrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46866EA225C379390013D95B /* ScrumdingerApp.swift */; };
 		46866EA525C379390013D95B /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46866EA425C379390013D95B /* MeetingView.swift */; };
 		46866EA725C3793A0013D95B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46866EA625C3793A0013D95B /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		465D82B225C60088001EA2AF /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
+		465D82B825C61326001EA2AF /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		46866E9F25C379390013D95B /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46866EA225C379390013D95B /* ScrumdingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerApp.swift; sourceTree = "<group>"; };
 		46866EA425C379390013D95B /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				46866EA425C379390013D95B /* MeetingView.swift */,
 				469192E425C4D55400EE14AC /* CardView.swift */,
 				465D82B225C60088001EA2AF /* ScrumsView.swift */,
+				465D82B825C61326001EA2AF /* DetailView.swift */,
 				46866EA625C3793A0013D95B /* Assets.xcassets */,
 				46866EAB25C3793A0013D95B /* Info.plist */,
 				46866EA825C3793A0013D95B /* Preview Content */,
@@ -169,6 +172,7 @@
 				46866EA525C379390013D95B /* MeetingView.swift in Sources */,
 				465D82B325C60088001EA2AF /* ScrumsView.swift in Sources */,
 				46DC2E8325C4D17600A27C91 /* DailyScrum.swift in Sources */,
+				465D82B925C61326001EA2AF /* DetailView.swift in Sources */,
 				46DC2E8825C4D3FC00A27C91 /* Color+Codable.swift in Sources */,
 				46866EA325C379390013D95B /* ScrumdingerApp.swift in Sources */,
 				469192E525C4D55400EE14AC /* CardView.swift in Sources */,
