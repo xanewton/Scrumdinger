@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DetailView: View {
     let scrum: DailyScrum
+    @State private var isPresented = false
     
     var body: some View {
         List {
@@ -43,7 +44,23 @@ struct DetailView: View {
             }
         }
         .listStyle(InsetGroupedListStyle())
+        .navigationBarItems(trailing: Button("Edit") {
+            isPresented = true
+        })
         .navigationTitle(scrum.title)
+        // When isPresented changes to true, the app modally presents EditView using the entire screen.
+        // Tip. You can use the sheet modifier to present a modal that only partially covers the underlying content. View the Human Interface Guidelines (https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/modality/) to learn more about using modality effectively in your apps.
+        .fullScreenCover(isPresented: $isPresented) {
+            NavigationView {
+                EditView()
+                    .navigationTitle(scrum.title)
+                    .navigationBarItems(leading: Button("Cancel") {
+                        isPresented = false
+                    }, trailing: Button("Done") {
+                        isPresented = false
+                    })
+            }
+        }
     }
 }
 
