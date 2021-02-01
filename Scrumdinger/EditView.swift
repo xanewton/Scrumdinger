@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct EditView: View {
-    @State private var scrumData: DailyScrum.Data = DailyScrum.Data()
+    // You should maintain a single source of truth for every piece of data in your app and use bindings to share a reference to that source of truth. The edit screen should act on data that the detail screen owns, instead of creating a new source of truth.
+    @Binding var scrumData: DailyScrum.Data
     @State private var newAttendee = ""
     
     var body: some View {
@@ -55,6 +56,6 @@ struct EditView: View {
 
 struct EditView_Previews: PreviewProvider {
     static var previews: some View {
-        EditView()
+        EditView(scrumData: .constant(DailyScrum.data[0].data))
     }
 }
