@@ -33,6 +33,16 @@ struct MeetingView: View {
         }
         .padding()
         .foregroundColor(scrum.color.accessibleFontColor)
+        
+        // SwiftUI provides life cycle methods to trigger events when a view appears and disappears. For example, you could add onAppear(perform:) to start an animation after a view appears. And you could add onDisappear(perform:) to release unnecessary resources when a view disappears.
+        .onAppear {
+            // The timer resets each time an instance of MeetingView shows on screen, indicating that a meeting should begin.
+            scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
+            scrumTimer.startScrum()
+        }
+        .onDisappear {
+            scrumTimer.stopScrum()
+        }
     }
 }
 
