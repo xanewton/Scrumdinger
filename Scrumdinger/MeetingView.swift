@@ -15,7 +15,8 @@ struct MeetingView: View {
             RoundedRectangle(cornerRadius: 16.0)
                 .fill(scrum.color)
             VStack {
-                
+                // SwiftUI supports composing large views from smaller views.
+                // MeetingHeaderView()
                 Circle()
                     .strokeBorder(lineWidth: 24, antialiased: true)
                 HStack {
