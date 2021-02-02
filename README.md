@@ -1,9 +1,8 @@
-Scrumdinger
-=====================
-iOS application to learn SwiftUI based on [Apple Tutorials](https://developer.apple.com/tutorials/app-dev-training) 
+# Scrumdinger
+
+### iOS application to learn SwiftUI based on [Apple Tutorials](https://developer.apple.com/tutorials/app-dev-training). 
 
 ![Scheme](/readmeImages/scrumdinger.png)
-
 
 <p float="left">
   <img src="/readmeImages/scrum_list.png" width="20%" height="20%">
@@ -12,41 +11,40 @@ iOS application to learn SwiftUI based on [Apple Tutorials](https://developer.ap
 </p>
 
 
-Pre-requisites
-----------------
+## Pre-requisites
 - xCode 12.4 or higher
 - MAC machine
 - Review [Swift Basics](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html) and [Swift Closures](https://docs.swift.org/swift-book/LanguageGuide/Closures.html)
 
 
-References
-----------
-SwiftUI and Xcode Essentials:
+## References
+
+### SwiftUI and Xcode Essentials:
 - [Getting Started](https://developer.apple.com/tutorials/app-dev-training/getting-started)
 - [Using Stacks to Arrange Views](https://developer.apple.com/tutorials/app-dev-training/using-stacks-to-arrange-views)
 
-Views:
+### Views:
 - [Creating a CardView](https://developer.apple.com/tutorials/app-dev-training/creating-a-cardview)
 - [Displaying Data in a List](https://developer.apple.com/tutorials/app-dev-training/displaying-data-in-a-list)
 
-Navigation and Modal Presentation:
+### Navigation and Modal Presentation:
 - [Creating a Navigation Hierarchy](https://developer.apple.com/tutorials/app-dev-training/creating-a-navigation-hierarchy)
 - [Creating the Edit View](https://developer.apple.com/tutorials/app-dev-training/creating-the-edit-view)
 
-Passing Data:
+### Passing Data:
 - [Passing Data with Bindings](https://developer.apple.com/tutorials/app-dev-training/passing-data-with-bindings)
 
-State Management:
+### State Management:
 - [Managing State and Life Cycle](https://developer.apple.com/tutorials/app-dev-training/managing-state-and-life-cycle)
 - [Updating App Data](https://developer.apple.com/tutorials/app-dev-training/updating-app-data)
 
-Persistence:
+### Persistence:
 - [Persisting Data](https://developer.apple.com/tutorials/app-dev-training/persisting-data)
 
-Drawing:
+### Drawing:
 - [Drawing the Timer View](https://developer.apple.com/tutorials/app-dev-training/drawing-the-timer-view)
 
-Recording Audio:
+### Recording Audio:
 - [Transcribing Speech to Text](https://developer.apple.com/tutorials/app-dev-training/transcribing-speech-to-text)
 - [Wrapping Up](https://developer.apple.com/tutorials/app-dev-training/wrapping-up)
 
