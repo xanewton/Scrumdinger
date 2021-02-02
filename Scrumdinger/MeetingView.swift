@@ -10,6 +10,7 @@ import SwiftUI
 struct MeetingView: View {
     @Binding var scrum: DailyScrum
     // You can use @StateObject to create a source of truth for reference type models that conform to the ObservableObject protocol.
+    // Wrapping a reference type property as a @StateObject keeps the object alive for the life cycle of a view.
     @StateObject var scrumTimer = ScrumTimer()
     
     var body: some View {
