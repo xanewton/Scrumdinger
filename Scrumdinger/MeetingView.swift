@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MeetingView: View {
     @Binding var scrum: DailyScrum
+    // You can use @StateObject to create a source of truth for reference type models that conform to the ObservableObject protocol.
+    @StateObject var scrumTimer = ScrumTimer()
     
     var body: some View {
         ZStack {
@@ -16,7 +18,7 @@ struct MeetingView: View {
                 .fill(scrum.color)
             VStack {
                 // SwiftUI supports composing large views from smaller views.
-                // MeetingHeaderView()
+                MeetingHeaderView(secondsElapsed: scrumTimer.secondsElapsed, secondsRemaining: scrumTimer.secondsRemaining, scrumColor: scrum.color)
                 Circle()
                     .strokeBorder(lineWidth: 24, antialiased: true)
                 HStack {
