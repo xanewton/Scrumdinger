@@ -43,6 +43,18 @@ struct DetailView: View {
                         .accessibilityValue(Text(attendee))
                 }
             }
+            Section(header: Text("History")) {
+                if scrum.history.isEmpty {
+                    Label("No meetings yet", systemImage: "calendar.badge.exclamationmark")
+                }
+                ForEach(scrum.history) { history in
+                    HStack {
+                        Image(systemName: "calendar")
+                        // Text(_:style:) displays a localized date or time. For more styles, refer to the Text.DateStyle documentation. https://developer.apple.com/documentation/swiftui/text/datestyle
+                        Text(history.date, style: .date)
+                    }
+                }
+            }
         }
         .listStyle(InsetGroupedListStyle())
         .navigationBarItems(trailing: Button("Edit") {
