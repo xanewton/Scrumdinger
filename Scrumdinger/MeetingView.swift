@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct MeetingView: View {
     @Binding var scrum: DailyScrum
     // You can use @StateObject to create a source of truth for reference type models that conform to the ObservableObject protocol.
     // Wrapping a reference type property as a @StateObject keeps the object alive for the life cycle of a view.
     @StateObject var scrumTimer = ScrumTimer()
+    var player: AVPlayer { AVPlayer.sharedDingPlayer }
     
     var body: some View {
         ZStack {
@@ -32,6 +34,10 @@ struct MeetingView: View {
         .onAppear {
             // The timer resets each time an instance of MeetingView shows on screen, indicating that a meeting should begin.
             scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
+            scrumTimer.speakerChangedAction = {
+                player.seek(to: .zero)
+                player.play()
+            }
             scrumTimer.startScrum()
         }
         .onDisappear {
