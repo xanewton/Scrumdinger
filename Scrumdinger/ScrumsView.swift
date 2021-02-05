@@ -9,8 +9,11 @@ import SwiftUI
 
 struct ScrumsView: View {
     @Binding var scrums: [DailyScrum]
+    // SwiftUI indicates the current operational state of your app’s Scene instances with a scenePhase Environment value.
+    @Environment(\.scenePhase) private var scenePhase
     @State private var isPresented = false
     @State private var newScrumData = DailyScrum.Data()
+    let saveAction: () -> Void
     
     var body: some View {
         List {
@@ -42,6 +45,13 @@ struct ScrumsView: View {
                     })
             }
         }
+        .onChange(of: scenePhase) { phase in
+            // A scene in the inactive phase no longer receives events and may be unavailable to the user.
+            // Tip
+            // Refer to ScenePhase for descriptions of each phase and instructions for triggering actions when the phase changes.
+            // https://developer.apple.com/documentation/swiftui/scenephase
+            if phase == .inactive { saveAction() }
+        }
     }
     
     private func binding(for scrum: DailyScrum) -> Binding<DailyScrum> {
@@ -56,7 +66,7 @@ struct ScrumsView_Previews: PreviewProvider {
     static var previews: some View {
         // Adding the NavigationView displays navigation elements, like title and bar buttons, on the canvas.
         NavigationView {
-            ScrumsView(scrums: .constant(DailyScrum.data))
+            ScrumsView(scrums: .constant(DailyScrum.data), saveAction: {})
         }
     }
 }
