@@ -7,6 +7,31 @@
 
 import SwiftUI
 
+// The Shape protocol has one required function: path(in:). You’ll write the path(in:) function and additional properties you’ll use to calculate the path inside that function.
+// For more details on the Shape protocol, see the developer documentation. https://developer.apple.com/documentation/swiftui/shape
+struct SpeakerArc: Shape {
+    let speakerIndex: Int
+    let totalSpeakers: Int
+    private var degreesPerSpeaker: Double {
+        360.0 / Double(totalSpeakers)
+    }
+    private var startAngle: Angle {
+        Angle(degrees: degreesPerSpeaker * Double(speakerIndex) + 1.0)
+    }
+    private var endAngle: Angle {
+        Angle(degrees: startAngle.degrees + degreesPerSpeaker - 1.0)
+    }
+    
+    func path(in rect: CGRect) -> Path {
+        let diameter = min(rect.size.width, rect.size.height) - 24.0
+        let radius = diameter / 2.0
+        let center = CGPoint(x: rect.origin.x + rect.size.width / 2.0, y: rect.origin.y + rect.size.height / 2.0)
+        return Path { path in
+            path.addArc(center: center, radius: radius, startAngle: startAngle, endAngle: endAngle, clockwise: false)
+        }
+    }
+}
+
 struct MeetingTimerView: View {
     let speakers: [ScrumTimer.Speaker]
     var scrumColor: Color
