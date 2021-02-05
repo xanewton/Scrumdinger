@@ -29,6 +29,7 @@
 		46BEF38025CB5A8400572794 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BEF37F25CB5A8400572794 /* History.swift */; };
 		46DC2E8325C4D17600A27C91 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC2E8225C4D17600A27C91 /* DailyScrum.swift */; };
 		46DC2E8825C4D3FC00A27C91 /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC2E8725C4D3FC00A27C91 /* Color+Codable.swift */; };
+		46F1F0D525CE0BD900098212 /* MeetingTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1F0D425CE0BD900098212 /* MeetingTimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		46BEF37F25CB5A8400572794 /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		46DC2E8225C4D17600A27C91 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		46DC2E8725C4D3FC00A27C91 /* Color+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
+		46F1F0D425CE0BD900098212 /* MeetingTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingTimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				465D82B825C61326001EA2AF /* DetailView.swift */,
 				46B7312625C764B500D4B033 /* EditView.swift */,
 				4684141A25CA0AFA002F3992 /* ScrumProgressViewStyle.swift */,
+				46F1F0D425CE0BD900098212 /* MeetingTimerView.swift */,
 				46DC2E8125C4D15D00A27C91 /* Models */,
 				46866EA625C3793A0013D95B /* Assets.xcassets */,
 				46866EAB25C3793A0013D95B /* Info.plist */,
@@ -137,11 +140,11 @@
 		46DC2E8125C4D15D00A27C91 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				46BEF37F25CB5A8400572794 /* History.swift */,
 				46DC2E8725C4D3FC00A27C91 /* Color+Codable.swift */,
 				46DC2E8225C4D17600A27C91 /* DailyScrum.swift */,
-				4684141E25CA0B0D002F3992 /* AVPlayer+Ding.swift */,
 				4684141D25CA0B0D002F3992 /* ScrumTimer.swift */,
+				4684141E25CA0B0D002F3992 /* AVPlayer+Ding.swift */,
+				46BEF37F25CB5A8400572794 /* History.swift */,
 				46549D7E25CCC52E00673C55 /* ScrumData.swift */,
 			);
 			path = Models;
@@ -227,6 +230,7 @@
 				46B7312725C764B500D4B033 /* EditView.swift in Sources */,
 				4682A4BA25CA13B800741554 /* MeetingHeaderView.swift in Sources */,
 				46549D7F25CCC52E00673C55 /* ScrumData.swift in Sources */,
+				46F1F0D525CE0BD900098212 /* MeetingTimerView.swift in Sources */,
 				4682A4BE25CA1A7400741554 /* MeetingFooterView.swift in Sources */,
 				4684142025CA0B0D002F3992 /* AVPlayer+Ding.swift in Sources */,
 				46DC2E8325C4D17600A27C91 /* DailyScrum.swift in Sources */,
