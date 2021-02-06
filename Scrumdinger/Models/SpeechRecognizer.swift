@@ -43,7 +43,6 @@ struct SpeechRecognizer {
         relay(speech, message: "Requesting access")
         
         // canAccess(withHandler:) calls requestAuthorization(_:) each time, which asks the user for permission unless they’ve previously made a decision.
-        // Scrumdinger uses the microphone to record the audio that is used to generate the meeting transcripts. As a security feature, users must explicitly grant access to personal information or sensitive device hardware. For guidelines to secure user data, see Protecting the User’s Privacy. https://developer.apple.com/documentation/uikit/protecting_the_user_s_privacy
         canAccess { authorized in
             guard authorized else {
                 relay(speech, message: "Access denied")

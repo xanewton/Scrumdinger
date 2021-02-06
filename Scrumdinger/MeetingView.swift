@@ -13,6 +13,10 @@ struct MeetingView: View {
     // You can use @StateObject to create a source of truth for reference type models that conform to the ObservableObject protocol.
     // Wrapping a reference type property as a @StateObject keeps the object alive for the life cycle of a view.
     @StateObject var scrumTimer = ScrumTimer()
+    @State private var transcript = ""
+    @State private var isRecording = false
+    // Scrumdinger uses the microphone to record the audio that is used to generate the meeting transcripts. As a security feature, users must explicitly grant access to personal information or sensitive device hardware. For guidelines to secure user data, see Protecting the User’s Privacy. https://developer.apple.com/documentation/uikit/protecting_the_user_s_privacy
+    private let speechRecognizer = SpeechRecognizer()
     var player: AVPlayer { AVPlayer.sharedDingPlayer }
     
     var body: some View {
@@ -37,10 +41,14 @@ struct MeetingView: View {
                 player.seek(to: .zero)
                 player.play()
             }
+            speechRecognizer.record(to: $transcript)
+            isRecording = true
             scrumTimer.startScrum()
         }
         .onDisappear {
             scrumTimer.stopScrum()
+            isRecording = false
+            speechRecognizer.stopRecording()
             let newHistory = History(attendees: scrum.attendees, lengthInMinutes: scrumTimer.secondsElapsed / 60)
             scrum.history.insert(newHistory, at: 0)
         }
