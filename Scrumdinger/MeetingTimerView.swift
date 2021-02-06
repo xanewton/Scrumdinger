@@ -34,6 +34,7 @@ struct SpeakerArc: Shape {
 
 struct MeetingTimerView: View {
     let speakers: [ScrumTimer.Speaker]
+    let isRecording: Bool
     var scrumColor: Color
     private var currentSpeaker: String { speakers.first(where: { !$0.isCompleted })?.name ?? "Someone" }
     
@@ -45,6 +46,10 @@ struct MeetingTimerView: View {
                 Text(currentSpeaker)
                     .font(.title)
                 Text("is speaking")
+                Image(systemName: isRecording ? "mic" : "mic.slash")
+                    .font(.title)
+                    .padding(.top)
+                    .accessibilityLabel(isRecording ? "with transcription" : "without transcription")
             }
             // This modifier makes VoiceOver read the two Text views as one sentence.
             .accessibilityElement(children: .combine)
@@ -66,6 +71,6 @@ struct MeetingTimerView: View {
 struct MeetingTimerView_Previews: PreviewProvider {
     static var speakers = [ScrumTimer.Speaker(name: "Kim", isCompleted: true), ScrumTimer.Speaker(name: "Bill", isCompleted: false)]
     static var previews: some View {
-        MeetingTimerView(speakers: speakers, scrumColor: Color("Design"))
+        MeetingTimerView(speakers: speakers, isRecording: true, scrumColor: Color("Design"))
     }
 }
