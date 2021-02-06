@@ -48,10 +48,12 @@ struct DetailView: View {
                     Label("No meetings yet", systemImage: "calendar.badge.exclamationmark")
                 }
                 ForEach(scrum.history) { history in
-                    HStack {
-                        Image(systemName: "calendar")
-                        // Text(_:style:) displays a localized date or time. For more styles, refer to the Text.DateStyle documentation. https://developer.apple.com/documentation/swiftui/text/datestyle
-                        Text(history.date, style: .date)
+                    NavigationLink(destination: HistoryView(history: history)) {
+                        HStack {
+                            Image(systemName: "calendar")
+                            // Text(_:style:) displays a localized date or time. For more styles, refer to the Text.DateStyle documentation. https://developer.apple.com/documentation/swiftui/text/datestyle
+                            Text(history.date, style: .date)
+                        }
                     }
                 }
             }
@@ -86,3 +88,6 @@ struct DetailView_Previews: PreviewProvider {
         }
     }
 }
+
+// You finished building Scrumdinger using a combination of SwiftUI, Foundation, AVFoundation, and Speech. Take a moment to explore the many frameworks available on the Apple Developer Documentation Technologies page.
+// https://developer.apple.com/documentation/technologies
