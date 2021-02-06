@@ -49,6 +49,19 @@
 - [Wrapping Up](https://developer.apple.com/tutorials/app-dev-training/wrapping-up)
 
 
+### More resources:
+- [Technologies](https://developer.apple.com/documentation/technologies) Apple Developer Documentation Technologies page with the list of Frameworks available.
+- Connect with fellow developers, mentors, and Apple engineers in the [Apple Developer Forum](https://developer.apple.com/forums/tags/swiftui). Search for the SwiftUI tag to get started.
+- Explore [Localization](https://developer.apple.com/localization/) for guidelines on how to adapt your apps for a global audience, including how Xcode can structure your resources for localized content.
+- Join the [Using Swift community forum](https://forums.swift.org/) to discuss current and upcoming language features.
+- Download the [Developer app](https://apps.apple.com/us/app/apple-developer/id640199958) and watch the [Apple Design Awards](https://developer.apple.com/design/awards/) to get inspired by beautiful apps made by the Apple developer community. You’ll also find sessions about Swift, SwiftUI, testing, networking, and a variety of other topics.
+- Learn more about Apple’s design principles in the [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/).
+- Review [Accessibility for Developers](https://developer.apple.com/accessibility/) to learn how to support assistive technologies on Apple platforms.
+- Explore [Localization](https://developer.apple.com/localization/) for guidelines on how to adapt your apps for a global audience, including how Xcode can structure your resources for localized content.
+- Explore [Apple Developer Documentation](https://developer.apple.com/documentation) and browse through the comprehensive API reference library and sample code projects to find inspiration for your next project.
+
+
+
 ## License
 
 Copyright 2021 Angel Newton
