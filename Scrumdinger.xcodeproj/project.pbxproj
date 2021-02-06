@@ -26,6 +26,7 @@
 		46866EB525C37ADB0013D95B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 46866EB325C37ADA0013D95B /* README.md */; };
 		469192E525C4D55400EE14AC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469192E425C4D55400EE14AC /* CardView.swift */; };
 		46B7312725C764B500D4B033 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B7312625C764B500D4B033 /* EditView.swift */; };
+		46B9096B25CF2D1300FF90EA /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B9096A25CF2D1300FF90EA /* SpeechRecognizer.swift */; };
 		46BEF38025CB5A8400572794 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BEF37F25CB5A8400572794 /* History.swift */; };
 		46DC2E8325C4D17600A27C91 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC2E8225C4D17600A27C91 /* DailyScrum.swift */; };
 		46DC2E8825C4D3FC00A27C91 /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC2E8725C4D3FC00A27C91 /* Color+Codable.swift */; };
@@ -54,6 +55,7 @@
 		46866EB325C37ADA0013D95B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		469192E425C4D55400EE14AC /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		46B7312625C764B500D4B033 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		46B9096A25CF2D1300FF90EA /* SpeechRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		46BEF37F25CB5A8400572794 /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		46DC2E8225C4D17600A27C91 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		46DC2E8725C4D3FC00A27C91 /* Color+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
@@ -114,12 +116,12 @@
 				46866EA425C379390013D95B /* MeetingView.swift */,
 				4682A4BD25CA1A7400741554 /* MeetingFooterView.swift */,
 				4682A4B925CA13B800741554 /* MeetingHeaderView.swift */,
+				46F1F0D425CE0BD900098212 /* MeetingTimerView.swift */,
 				469192E425C4D55400EE14AC /* CardView.swift */,
 				465D82B225C60088001EA2AF /* ScrumsView.swift */,
 				465D82B825C61326001EA2AF /* DetailView.swift */,
 				46B7312625C764B500D4B033 /* EditView.swift */,
 				4684141A25CA0AFA002F3992 /* ScrumProgressViewStyle.swift */,
-				46F1F0D425CE0BD900098212 /* MeetingTimerView.swift */,
 				46DC2E8125C4D15D00A27C91 /* Models */,
 				46866EA625C3793A0013D95B /* Assets.xcassets */,
 				46866EAB25C3793A0013D95B /* Info.plist */,
@@ -146,6 +148,7 @@
 				4684141E25CA0B0D002F3992 /* AVPlayer+Ding.swift */,
 				46BEF37F25CB5A8400572794 /* History.swift */,
 				46549D7E25CCC52E00673C55 /* ScrumData.swift */,
+				46B9096A25CF2D1300FF90EA /* SpeechRecognizer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				46866EA525C379390013D95B /* MeetingView.swift in Sources */,
 				465D82B325C60088001EA2AF /* ScrumsView.swift in Sources */,
 				46BEF38025CB5A8400572794 /* History.swift in Sources */,
+				46B9096B25CF2D1300FF90EA /* SpeechRecognizer.swift in Sources */,
 				46B7312725C764B500D4B033 /* EditView.swift in Sources */,
 				4682A4BA25CA13B800741554 /* MeetingHeaderView.swift in Sources */,
 				46549D7F25CCC52E00673C55 /* ScrumData.swift in Sources */,
